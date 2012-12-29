@@ -39,8 +39,8 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 command Wq :execute ':W' | :q
 command WQ :Wq
 
-" Use system clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
+autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
 
 " NERDTree settings
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\~$']
