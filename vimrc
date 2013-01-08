@@ -44,3 +44,6 @@ autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
 
 " NERDTree settings
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\~$']
+
+" ruby specific indentation
+autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
