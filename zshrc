@@ -6,3 +6,9 @@ do
     source "$f"
 done
 
+export EDITOR=vim
+export PAGER=less
+
+if [[ -d "$HOME/prefix/bin" ]]
+    export PATH=$HOME/prefix/bin:$PATH
+fi
