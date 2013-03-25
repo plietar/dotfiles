@@ -1,3 +1,8 @@
+# Load local configuration file, if it exists
+if [[ -f "$HOME/.zsh_local" ]]; then
+    source "$HOME/.zsh_local"
+fi
+
 # Disable zsh auto-complete cache
 zstyle ":completion:*:commands" rehash 1
 
