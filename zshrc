@@ -11,9 +11,6 @@ do
     source "$f"
 done
 
-export EDITOR=vim
-export PAGER=less
-
 if [[ -d "$HOME/prefix/bin" ]]; then
     export PATH=$HOME/prefix/bin:$PATH
 fi
