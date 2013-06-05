@@ -19,4 +19,9 @@ if [[ -d "$HOMEBREW_ROOT" ]]; then
     if [[ -d "$HOMEBREW_ROOT/opt/qt/" ]]; then
         export QTDIR="$HOMEBREW_ROOT/opt/qt"
     fi
+
+    # This actually causes problems when using Python 3
+    #if [[ -d "$HOMEBREW_ROOT/lib/python2.7/site-packages" ]]; then
+    #    export PYTHONPATH="$HOMEBREW_ROOT/lib/python2.7/site-packages:$PYTHONPATH"
+    #fi
 fi
