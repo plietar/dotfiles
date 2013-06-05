@@ -15,4 +15,8 @@ if [[ -d "$HOMEBREW_ROOT" ]]; then
         alias xargs=gxargs
         alias oldfind=goldfind
     fi
+
+    if [[ -d "$HOMEBREW_ROOT/opt/qt/" ]]; then
+        export QTDIR="$HOMEBREW_ROOT/opt/qt"
+    fi
 fi
