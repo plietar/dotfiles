@@ -1,5 +1,5 @@
 if [[ -d "$HOMEBREW_ROOT" ]]; then
-    export PATH="$HOMEBREW_ROOT/bin":$PATH
+    export PATH="$HOMEBREW_ROOT/bin:$HOMEBREW_ROOT/sbin":$PATH
 
     if [[ -d "$HOMEBREW_ROOT/opt/coreutils/libexec/gnubin" ]]; then
         export PATH="$HOMEBREW_ROOT/opt/coreutils/libexec/gnubin":$PATH
