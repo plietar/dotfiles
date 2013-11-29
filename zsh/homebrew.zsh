@@ -8,6 +8,20 @@ if [[ -d "$HOMEBREW_ROOT" ]]; then
         export MANPATH="$HOMEBREW_ROOT/opt/coreutils/libexec/gnuman":$MANPATH
     fi
 
+    if [[ -d "$HOMEBREW_ROOT/opt/gnu-sed/libexec/gnubin" ]]; then
+        export PATH="$HOMEBREW_ROOT/opt/gnu-sed/libexec/gnubin":$PATH
+    fi
+    if [[ -d "$HOMEBREW_ROOT/opt/gnu-sed/libexec/gnuman" ]]; then
+        export MANPATH="$HOMEBREW_ROOT/opt/gnu-sed/libexec/gnuman":$MANPATH
+    fi
+
+    if [[ -d "$HOMEBREW_ROOT/opt/bison/bin" ]]; then
+        export PATH="$HOMEBREW_ROOT/opt/bison/bin":$PATH
+    fi
+    if [[ -d "$HOMEBREW_ROOT/opt/bison/share/man" ]]; then
+        export MANPATH="$HOMEBREW_ROOT/opt/bison/share/man":$MANPATH
+    fi
+
     if [[ -d "$HOMEBREW_ROOT/opt/findutils" ]]; then
         alias find=gfind
         alias locate=glocate
