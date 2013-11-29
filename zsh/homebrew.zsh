@@ -1,6 +1,8 @@
 if [[ -d "$HOMEBREW_ROOT" ]]; then
     export PATH="$HOMEBREW_ROOT/bin:$HOMEBREW_ROOT/sbin":$PATH
 
+    export HOMEBREW_CASK_OPTS="--caskroom=$HOMEBREW_ROOT/Caskroom"
+
     if [[ -d "$HOMEBREW_ROOT/opt/coreutils/libexec/gnubin" ]]; then
         export PATH="$HOMEBREW_ROOT/opt/coreutils/libexec/gnubin":$PATH
     fi
