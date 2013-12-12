@@ -6,7 +6,7 @@ fi
 # Disable zsh auto-complete cache
 zstyle ":completion:*:commands" rehash 1
 
-for f in `find "$HOME/.zsh/" -maxdepth 1 -type f -name '*.zsh'`
+for f in `find "$HOME/.zsh/" -maxdepth 1 -type f -name '*.zsh' | sort`
 do
     source "$f"
 done
