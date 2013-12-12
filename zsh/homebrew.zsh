@@ -40,4 +40,9 @@ if [[ -d "$HOMEBREW_ROOT" ]]; then
     #if [[ -d "$HOMEBREW_ROOT/lib/python2.7/site-packages" ]]; then
     #    export PYTHONPATH="$HOMEBREW_ROOT/lib/python2.7/site-packages:$PYTHONPATH"
     #fi
+    
+    if [[ -d $HOMEBREW_ROOT/opt/android-sdk ]]; then
+        export ANDROID_HOME=$HOMEBREW_ROOT/opt/android-sdk
+    fi
+
 fi
