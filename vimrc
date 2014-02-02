@@ -36,6 +36,8 @@ set incsearch
 
 set nowrap
 
+set backspace=indent,eol,start
+
 " Sudo save
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 command Wq :execute ':W' | :q
