@@ -61,3 +61,7 @@ let g:vim_markdown_folding_disabled=1
 "let g:instant_markdown_autostart = 0
 
 set shell=bash\ -i
+
+set exrc
+set secure
+
