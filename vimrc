@@ -1,5 +1,6 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
+set nocompatible
+filetype off
+filetype plugin indent off
 
 " Include pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -58,9 +59,15 @@ autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType jade setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
+autocmd FileType go setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 let g:vim_markdown_folding_disabled=1
 
 "let g:instant_markdown_autostart = 0
+
+let g:go_highlight_space_tab_error = 1
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_highlight_chan_whitespace_error = 1
+let g:go_highlight_array_whitespace_error = 1
 
 set shell=bash\ -i
 
