@@ -74,3 +74,6 @@ set shell=bash\ -i
 set exrc
 set secure
 
+let g:session_autosave = 'no'
+:let mapleader = ","
+
