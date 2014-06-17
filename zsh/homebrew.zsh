@@ -43,6 +43,10 @@ if [[ -d "$HOMEBREW_ROOT" ]]; then
     
     if [[ -d $HOMEBREW_ROOT/opt/android-sdk ]]; then
         export ANDROID_HOME=$HOMEBREW_ROOT/opt/android-sdk
+        export ANDROID_SDK=$HOMEBREW_ROOT/opt/android-sdk
+    fi
+    if [[ -d $HOMEBREW_ROOT/opt/android-ndk ]]; then
+        export ANDROID_NDK=$HOMEBREW_ROOT/opt/android-ndk
     fi
 
 fi
