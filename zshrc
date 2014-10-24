@@ -15,5 +15,5 @@ if [[ -d "$HOME/prefix/bin" ]]; then
     export PATH=$HOME/prefix/bin:$PATH
 fi
 
-DEFAULT_USER="paul"
+#DEFAULT_USER="paul"
 
