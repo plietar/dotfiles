@@ -11,9 +11,7 @@ do
     source "$f"
 done
 
-if [[ -d "$HOME/prefix/bin" ]]; then
-    export PATH=$HOME/prefix/bin:$PATH
+if [[ -d "$HOME/.bin" ]]; then
+    export PATH=$HOME/.bin:$PATH
 fi
-
-#DEFAULT_USER="paul"
 
