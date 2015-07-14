@@ -51,18 +51,6 @@ inoremap <Down> <NOP>
 inoremap <Up> <NOP>
 inoremap <Right> <NOP>
 
-" Command line mode navigation
-cnoremap <A-h> <Left>
-cnoremap <A-j> <Down>
-cnoremap <A-k> <Up>
-cnoremap <A-l> <Right>
-
-" Easier move within windows
-noremap <C-h> <C-w><C-h>
-noremap <C-j> <C-w><C-j>
-noremap <C-k> <C-w><C-k>
-noremap <C-l> <C-w><C-l>
-
 " Disable annoying beeping
 set noerrorbells
 set vb t_vb=
@@ -70,7 +58,7 @@ set vb t_vb=
 autocmd BufRead,BufNewFile *.erb set filetype=eruby.html
 
 " NERDTree settings
-let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\~$', '\.o$']
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\~$', '\.o$', '\.d$']
 
 au BufRead,BufNewFile *.hamlc set ft=haml
 
@@ -95,7 +83,26 @@ set shell=bash
 set exrc
 set secure
 
-let mapleader = ","
-
 set mouse=nicra
+
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
+nmap <Leader><Leader> V
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
+let g:expand_region_text_objects = {
+      \ 'iw'  :0,
+      \ 'iW'  :0,
+      \ 'i"'  :0,
+      \ 'i''' :0,
+      \ 'i]'  :1,
+      \ 'i)'  :1,
+      \ 'i}'  :1,
+      \ 'il'  :0,
+      \ 'al'  :0,
+      \ 'ip'  :0,
+      \ 'ie'  :0,
+      \ }
+let g:AutoPairsMapCR = 0
 

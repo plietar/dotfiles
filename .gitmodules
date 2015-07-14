@@ -84,4 +84,22 @@
 	url = git@github.com:phildawes/racer.git
 [submodule "vim/bundle/rust.vim"]
 	path = vim/bundle/rust.vim
-	url = git@github.com:rust-lang/rust.vim.git
+	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/bundle/vim-expand-region"]
+	path = vim/bundle/vim-expand-region
+	url = git@github.com:terryma/vim-expand-region.git
+[submodule "vim/bundle/auto-pairs"]
+	path = vim/bundle/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "vim/bundle/vim-textobj-line"]
+	path = vim/bundle/vim-textobj-line
+	url = git@github.com:kana/vim-textobj-line.git
+[submodule "vim/bundle/vim-textobj-user"]
+	path = vim/bundle/vim-textobj-user
+	url = git@github.com:kana/vim-textobj-user.git
+[submodule "vim/bundle/vim-textobj-entire"]
+	path = vim/bundle/vim-textobj-entire
+	url = git@github.com:kana/vim-textobj-entire.git
+[submodule "vim/bundle/vim-fish"]
+	path = vim/bundle/vim-fish
+	url = https://github.com/dag/vim-fish
