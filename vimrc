@@ -1,16 +1,32 @@
 set nocompatible
 filetype off
-filetype plugin indent off
 
-" Include pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-sensible'
+Plugin 'sjbach/lusty'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'majutsushi/tagbar'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-line'
+Plugin 'kana/vim-textobj-user'
+Plugin 'terryma/vim-expand-region'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'kien/ctrlp.vim'
+
+Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'rust-lang/rust.vim'
+
+call vundle#end()
+filetype plugin indent on
 
 " Set Theme
 colorscheme solarized
 set bg=dark
-
-filetype plugin indent on
 
 " Don't create annoying files
 set nobackup
@@ -62,21 +78,13 @@ let NERDTreeIgnore = ['\.pyc$', '^__pycache__$', '\~$', '\.o$', '\.d$']
 
 au BufRead,BufNewFile *.hamlc set ft=haml
 
-autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType jade setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType java setlocal tabstop=2 shiftwidth=2 softtabstop=2
+"autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
+"autocmd FileType sh setlocal tabstop=2 shiftwidth=2 softtabstop=2
+"autocmd FileType jade setlocal tabstop=2 shiftwidth=2 softtabstop=2
+"autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+"autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
-autocmd FileType go setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
-let g:vim_markdown_folding_disabled=1
-
-"let g:instant_markdown_autostart = 0
-
-let g:go_highlight_space_tab_error = 1
-let g:go_highlight_trailing_whitespace_error = 1
-let g:go_highlight_chan_whitespace_error = 1
-let g:go_highlight_array_whitespace_error = 1
+"autocmd FileType go setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 set shell=bash
 
@@ -84,9 +92,11 @@ set exrc
 set secure
 
 set mouse=nicra
+set ttymouse=sgr
 
 let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
+
 nmap <Leader><Leader> V
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
@@ -104,5 +114,4 @@ let g:expand_region_text_objects = {
       \ 'ip'  :0,
       \ 'ie'  :0,
       \ }
-let g:AutoPairsMapCR = 0
 
