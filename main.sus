@@ -1,0 +1,22 @@
+card main {
+    into $(HOME)
+
+    .gitconfig
+    .dircolors
+    .tmux.conf
+
+    .vim
+    .vimrc
+
+    .zsh
+    .zshrc
+
+    {
+        outof fish
+        into .config/fish
+
+        config.fish
+        functions
+    }
+}
+

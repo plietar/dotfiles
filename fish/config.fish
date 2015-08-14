@@ -48,9 +48,5 @@ function fish_right_prompt
   end
 end
 
-set fish_cursor_default block
-set fish_cursor_insert line
-set fish_cursor_visual block
 fish_vi_mode
-fish_vi_cursor
 
