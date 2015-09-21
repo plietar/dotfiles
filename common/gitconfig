@@ -7,3 +7,5 @@
 	co = checkout
 	fixup = commit --fixup
 	autosquash = rebase -i --autostash --autosquash
+[include]
+        path = .gitconfig.local

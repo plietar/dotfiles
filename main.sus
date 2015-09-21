@@ -1,4 +1,10 @@
 card main {
+    spark card common
+    spark card local
+}
+
+card common {
+    outof common
     into $(HOME)
 
     .gitconfig
@@ -18,5 +24,12 @@ card main {
         config.fish
         functions
     }
+}
+
+card local {
+    outof $(SPARK)
+    into $(HOME)
+
+    .gitconfig.local
 }
 
