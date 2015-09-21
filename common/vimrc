@@ -115,3 +115,4 @@ let g:expand_region_text_objects = {
       \ 'ie'  :0,
       \ }
 
+source ~/.vimrc.local

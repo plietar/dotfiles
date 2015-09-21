@@ -31,5 +31,7 @@ card local {
     into $(HOME)
 
     .gitconfig.local
+    .vimrc.local
+    .tmux.local.conf
 }
 
