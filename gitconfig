@@ -5,3 +5,5 @@
 	default = simple
 [alias]
 	co = checkout
+	fixup = commit --fixup
+	autosquash = rebase -i --autostash --autosquash
