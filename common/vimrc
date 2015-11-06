@@ -67,6 +67,10 @@ inoremap <Down> <NOP>
 inoremap <Up> <NOP>
 inoremap <Right> <NOP>
 
+inoremap <Esc> <NOP>
+inoremap jk <Esc>
+inoremap kj <Esc>
+
 " Disable annoying beeping
 set noerrorbells
 set vb t_vb=
